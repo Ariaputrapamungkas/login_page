@@ -1,10 +1,12 @@
+// ignore_for_file: unnecessary_new, unused_local_variable
+
 import 'package:flutter/material.dart';
 import 'package:login_page/login/components/background.dart';
 
 
 
 void main() {
-  runApp(MaterialApp(
+  runApp(const MaterialApp(
     debugShowCheckedModeBanner: false,
     title: "Pejuang Skripsi dan Tugas Akhir",
     home: BelajarForm(),
@@ -12,6 +14,8 @@ void main() {
 }
 
 class BelajarForm extends StatefulWidget {
+  const BelajarForm({Key? key}) : super(key: key);
+
   @override
   _BelajarFormState createState() => _BelajarFormState();
 }
@@ -27,13 +31,13 @@ class _BelajarFormState extends State<BelajarForm> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Data Mahasiswa'),
+        title: const Text('Data Mahasiswa'),
       ),
       body: Form(
         key: _formKey,
         child: SingleChildScrollView(
           child: Container(
-            padding: EdgeInsets.all(20.0),
+            padding: const EdgeInsets.all(20.0),
             child: Column(
               children: [
                 Padding(
@@ -41,7 +45,7 @@ class _BelajarFormState extends State<BelajarForm> {
                   child: TextFormField(
                     decoration: new InputDecoration(
                       hintText: "Rachma Novita Anggreani",
-                      icon: Icon(Icons.people),
+                      icon: const Icon(Icons.people),
                       border: OutlineInputBorder(
                           borderRadius: new BorderRadius.circular(5.0)),
                     ),
@@ -52,7 +56,7 @@ class _BelajarFormState extends State<BelajarForm> {
                   child: TextFormField(
                     decoration: new InputDecoration(
                       hintText: "Aisyah Ulil Maulina",
-                      icon: Icon(Icons.people),
+                      icon: const Icon(Icons.people),
                       border: OutlineInputBorder(
                           borderRadius: new BorderRadius.circular(5.0)),
                     ),
@@ -63,14 +67,14 @@ class _BelajarFormState extends State<BelajarForm> {
                   child: TextFormField(
                     decoration: new InputDecoration(
                       hintText: "Aria Putra Pamungkas",
-                      icon: Icon(Icons.people),
+                      icon: const Icon(Icons.people),
                       border: OutlineInputBorder(
                           borderRadius: new BorderRadius.circular(5.0)),
                     ),
                   ),
                 ),
                 RaisedButton(
-                  child: Text(
+                  child: const Text(
                     "Kembali",
                     style: TextStyle(color: Colors.white),
                   ),

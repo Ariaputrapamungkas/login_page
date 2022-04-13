@@ -1,7 +1,9 @@
+// ignore_for_file: unused_local_variable
+
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MaterialApp(
+  runApp(const MaterialApp(
     debugShowCheckedModeBanner: false,
     title: "Pejuang Skripsi dan Tugas Akhir",
     home: BelajarForm(),
@@ -9,6 +11,8 @@ void main() {
 }
 
 class BelajarForm extends StatefulWidget {
+  const BelajarForm({Key? key}) : super(key: key);
+
   @override
   _BelajarFormState createState() => _BelajarFormState();
 }
@@ -24,13 +28,13 @@ class _BelajarFormState extends State<BelajarForm> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Detail Data Mahasiswa'),
+        title: const Text('Detail Data Mahasiswa'),
       ),
       body: Form(
         key: _formKey,
         child: SingleChildScrollView(
           child: Container(
-            padding: EdgeInsets.all(20.0),
+            padding: const EdgeInsets.all(20.0),
             child: Column(
               children: [
                 Padding(
@@ -38,7 +42,7 @@ class _BelajarFormState extends State<BelajarForm> {
                   child: TextFormField(
                     decoration: new InputDecoration(
                       hintText: "Nama: Rachma Novita Anggreani",
-                      icon: Icon(Icons.people),
+                      icon: const Icon(Icons.people),
                       border: OutlineInputBorder(
                           borderRadius: new BorderRadius.circular(5.0)),
                     ),
@@ -49,7 +53,7 @@ class _BelajarFormState extends State<BelajarForm> {
                   child: TextFormField(
                     decoration: new InputDecoration(
                       hintText: "NIM: 2031710062",
-                      icon: Icon(Icons.keyboard),
+                      icon: const Icon(Icons.keyboard),
                       border: OutlineInputBorder(
                           borderRadius: new BorderRadius.circular(5.0)),
                     ),
@@ -60,7 +64,7 @@ class _BelajarFormState extends State<BelajarForm> {
                   child: TextFormField(
                     decoration: new InputDecoration(
                       hintText: "Program Studi: D3-Manajemen Informatika",
-                      icon: Icon(Icons.bookmark),
+                      icon: const Icon(Icons.bookmark),
                       border: OutlineInputBorder(
                           borderRadius: new BorderRadius.circular(5.0)),
                     ),
@@ -71,7 +75,7 @@ class _BelajarFormState extends State<BelajarForm> {
                   child: TextFormField(
                     decoration: new InputDecoration(
                       hintText: "Judul: Sistem Informasi Jadwal Sidang dan Sempro",
-                      icon: Icon(Icons.book),
+                      icon: const Icon(Icons.book),
                       border: OutlineInputBorder(
                           borderRadius: new BorderRadius.circular(5.0)),
                     ),
@@ -82,7 +86,7 @@ class _BelajarFormState extends State<BelajarForm> {
                   child: TextFormField(
                     decoration: new InputDecoration(
                       hintText: "Dosen Pembimbing: Habibie Ed Dien, S.Kom., M.T.",
-                      icon: Icon(Icons.people),
+                      icon: const Icon(Icons.people),
                       border: OutlineInputBorder(
                           borderRadius: new BorderRadius.circular(5.0)),
                     ),
@@ -93,7 +97,7 @@ class _BelajarFormState extends State<BelajarForm> {
                   child: TextFormField(
                     decoration: new InputDecoration(
                       hintText: "Dosen Penguji: Ekojono, ST., M.Kom.",
-                      icon: Icon(Icons.people),
+                      icon: const Icon(Icons.people),
                       border: OutlineInputBorder(
                           borderRadius: new BorderRadius.circular(5.0)),
                     ),
@@ -104,7 +108,7 @@ class _BelajarFormState extends State<BelajarForm> {
                   child: TextFormField(
                     decoration: new InputDecoration(
                       hintText: "Tempat Pelaksanaan: Online (Zoom Meeting)",
-                      icon: Icon(Icons.home),
+                      icon: const Icon(Icons.home),
                       border: OutlineInputBorder(
                           borderRadius: new BorderRadius.circular(5.0)),
                     ),
@@ -115,7 +119,7 @@ class _BelajarFormState extends State<BelajarForm> {
                   child: TextFormField(
                     decoration: new InputDecoration(
                       hintText: "Jadwal Seminar Proposal: 24 Juni 2022, 09:00 WIB",
-                      icon: Icon(Icons.timeline),
+                      icon: const Icon(Icons.timeline),
                       border: OutlineInputBorder(
                           borderRadius: new BorderRadius.circular(5.0)),
                     ),
@@ -126,14 +130,14 @@ class _BelajarFormState extends State<BelajarForm> {
                   child: TextFormField(
                     decoration: new InputDecoration(
                       hintText: "Jadwal Sidang: 24 Agustus 2022, 09:00 WIB",
-                      icon: Icon(Icons.timeline),
+                      icon: const Icon(Icons.timeline),
                       border: OutlineInputBorder(
                           borderRadius: new BorderRadius.circular(5.0)),
                     ),
                   ),
                 ),
                 RaisedButton(
-                  child: Text(
+                  child: const Text(
                     "Kembali",
                     style: TextStyle(color: Colors.white),
                   ),
