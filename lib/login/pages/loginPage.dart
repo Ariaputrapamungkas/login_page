@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:login_page/login/components/background.dart';
 import 'package:login_page/login/pages/registerPage.dart';
+import 'package:login_page/login/pages/lupa_password.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -48,9 +49,13 @@ class LoginPage extends StatelessWidget {
                   ),
                 ),
               ),
-              const SizedBox(height: 20),
-              Container(
-                alignment: Alignment.centerRight,
+              const SizedBox(height: 10),
+              GestureDetector(
+                onTap: () => Navigator.push
+                (context,
+                 MaterialPageRoute(builder: (context) => const LupaPassword(),
+                 ),
+                ),
                 child: const Text(
                   'Forget your password?',
                   style: TextStyle(
@@ -60,6 +65,7 @@ class LoginPage extends StatelessWidget {
                   ),
                 ),
               ),
+              
               const SizedBox(height: 50),
               RaisedButton(
                 onPressed: () {},
