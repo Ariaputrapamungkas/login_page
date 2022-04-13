@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 class BackGround extends StatelessWidget {
   final Widget child;
-  // ignore: use_key_in_widget_constructors
   const BackGround({
     required this.child,
   });
